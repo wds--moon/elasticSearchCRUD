@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dmzl.sentiment.mapper.SentimentThemeMapper">
+  <resultMap id="BaseResultMap" type="com.dmzl.sentiment.entity.SentimentTheme">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="theme" jdbcType="VARCHAR" property="theme" />
+    <result column="keywords" jdbcType="VARCHAR" property="keywords" />
+    <result column="excluded_words" jdbcType="VARCHAR" property="excludedWords" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, theme, keywords, excluded_words, create_time
+  </sql>
+</mapper>

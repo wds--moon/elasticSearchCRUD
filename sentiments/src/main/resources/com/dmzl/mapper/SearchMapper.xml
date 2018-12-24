@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dmzl.sentiment.mapper.SearchMapper">
+  <resultMap id="BaseResultMap" type="com.dmzl.sentiment.entity.Search">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="author_name" jdbcType="VARCHAR" property="authorName" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="content_html" jdbcType="VARCHAR" property="contentHtml" />
+    <result column="dup_count" jdbcType="VARCHAR" property="dupCount" />
+    <result column="duplicates" jdbcType="VARCHAR" property="duplicates" />
+    <result column="uuid" jdbcType="VARCHAR" property="uuid" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="media_id" jdbcType="VARCHAR" property="mediaId" />
+    <result column="media_industry_id" jdbcType="VARCHAR" property="mediaIndustryId" />
+    <result column="media_type" jdbcType="VARCHAR" property="mediaType" />
+    <result column="publish_time" jdbcType="VARCHAR" property="publishTime" />
+    <result column="crawl_time" jdbcType="VARCHAR" property="crawlTime" />
+    <result column="reply_count" jdbcType="INTEGER" property="replyCount" />
+    <result column="sentiment_type" jdbcType="INTEGER" property="sentimentType" />
+    <result column="thread_starter" jdbcType="VARCHAR" property="threadStarter" />
+    <result column="source" jdbcType="VARCHAR" property="source" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="view_count" jdbcType="INTEGER" property="viewCount" />
+    <result column="sentiment" jdbcType="INTEGER" property="sentiment" />
+    <result column="es" jdbcType="INTEGER" property="es" />
+    <result column="probability" jdbcType="DOUBLE" property="probability" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    id, author_name, content, content_html, dup_count, duplicates, uuid, image, media_id, 
+    media_industry_id, media_type, publish_time, crawl_time, reply_count, sentiment_type, 
+    thread_starter, `source`, title, url, view_count, sentiment, es, probability
+  </sql>
+</mapper>
